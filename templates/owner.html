@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<head >
+    <style>
+        
+        body{
+            background-image: url("https://www.colorhexa.com/20b2aa.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+      </style>
+</head>
+<body>
+    			
+			<input class="form-control" name="user_id" type="hidden">
+			<h1>1. Please enter your address:</h1>
+			<div class="form-group has-success"> 
+				<input class="form-control input-lg" id="address" name="address"  type="text" placeholder="Enter an address..." > 
+			</div>
+			
+		
+				</div>
+			</div>
+			<hr/>
+			
+			
+			<h1>2. Total number of parking spots</h1>
+			<p>You can edit your spots info individually later.</p>
+			<div class="form-group has-success"> <input id="numSpot" class="form-control input-lg" required="required" name="numSpot" type="text" value="1"> </div>
+			<hr/>
+			
+			
+			<!--<hr/>
+			<h1>3. Parking Spot Type</h1>
+			<div class="form-group has-success">
+				<select name="spottype" class="form-control input-lg">
+				</select>
+			</div>
+			<hr/>-->
+			<h1>3. Currency</h1>
+			<div class="form-group has-success">
+				<select id="currency" name="currency_type_id" class="form-control input-lg" onChange="currencyChange()" required>
+					<option selected value="">--- Please select spot currency ---</option>
+									
+						
+													<option value="CAD">IN (Rupee)</option>
+															
+						
+													<option value="EUR">EUR (Euro)</option>
+															
+						
+													
+															
+						
+													<option value="USD">USD (U.S. Dollar)</option>
+															
+				</select>
+			</div>
+			<hr/>
+			
+			
+			<h1>4. Spot Type</h1>
+			<div class="form-group has-success">
+				<select id="spot_type_id" name="spot_type_id" class="form-control input-lg" >
+						
+													<option value="0" selected>Private driveway</option>
+												
+									
+							<option value="1">Shared driveway</option>
+												
+									
+							<option value="2">Permission to block driveway</option>
+												
+									
+							<option value="3">Private garage</option>
+												
+									
+							<option value="4">Public garage</option>
+												
+									
+							<option value="5">Private parking lot</option>
+												
+									
+							<option value="6">Multi level parking lot</option>
+												
+									
+							<option value="7">Single level parking lot</option>
+												
+									
+							<option value="8">Allocated car park space</option>
+												
+									
+							<option value="9">Private Field Covered</option>
+												
+									
+							<option value="10">Private Field Un-Covered</option>
+															</select>
+			</div>
+            
+            <h1>Pictures (Optional)</h1>
+            <div class="form-group has-success">
+                <input type="file" name="picture_1" class="form-control" style="margin:0 0 2px 0">
+                <input type="file" name="picture_2" class="form-control" style="margin:0 0 2px 0">
+                <input type="file" name="picture_3" class="form-control" style="margin:0 0 2px 0">
+                <input type="file" name="picture_4" class="form-control" style="margin:0 0 2px 0">
+                <input type="file" name="picture_5" class="form-control" style="margin:0 0 2px 0">
+			</div>
+			<hr/>
+			
+			
+			<h1>5. Pricing</h1>
+			<div class="row">
+				<div class="form-group col-md-3">
+					<div class="input-group">
+						<div class="input-group-addon" id="Shour">Hourly</div>
+						<input id="price" class="form-control" placeholder="Hourly" name="hour_price" type="text"> 
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<div class="input-group">
+						<div class="input-group-addon" id="Sday">Daily</div>
+						<input id="daily_price" class="form-control" placeholder="Daily" name="daily_price" type="text"> 
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<div class="input-group">
+						<div class="input-group-addon" id="Sweek">Weekly</div>
+						<input id="weekly_price" class="form-control" placeholder="Weekly" name="weekly_price" type="text"> 
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+					<div class="input-group">
+						<div class="input-group-addon" id="Smonth">Monthly</div>
+						<input id="monthly_price" class="form-control" placeholder="Monthly" name="monthly_price" type="text"> 
+					</div>
+				</div>
+            </div><br><Br>
+            <a href="#" class="btn btn-dark btn-lg"  style="margin-left: 100px;">SUBMIT</a> <br> <br>
+</body>
+</html>
